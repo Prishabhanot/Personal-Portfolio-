@@ -1178,16 +1178,30 @@ footer {
     justify-content: center;
     width: 100%
 }
-
+/* Ensure projects are in a row (3 per row) */
 .project-boxes-div {
-    width: 100%;
-    height: fit-content;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 50px
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+/* Make sure project boxes remain the same size */
+.project-box-wrapper {
+    width: calc(33.333% - 30px);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 1024px) {
+    .project-box-wrapper {
+        width: calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-box-wrapper {
+        width: 100%;
+    }
 }
 
 .cta:hover:before,
