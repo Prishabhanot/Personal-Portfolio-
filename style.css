@@ -1195,18 +1195,10 @@ footer {
     display: flex;
     justify-content: center;
 }
-
-/* Responsive design for tablets (2 per row) */
-@media screen and (max-width: 1024px) {
-    .project-boxes-div {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
     .project-boxes-div {
       grid-template-columns: 1fr; /* One column layout */
-      max-width: 140px;           /* Limit the width on mobile */
+      max-width: 350px;           /* Limit the width on mobile */
       margin: 0 auto;             /* Center the container */
       gap: 20px;                  /* Optional: adjust gap if needed */
     }
