@@ -1204,13 +1204,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .projects-section-container {
-      padding: 100px 20px; /* Reduced vertical padding and added horizontal padding */
-    }
     .project-boxes-div {
-      grid-template-columns: 1fr; /* Single column layout for mobile */
-      gap: 20px; /* Slightly reduced gap between project boxes */
-      margin-top: 20px; /* Adjust the top margin if needed */
+      grid-template-columns: 1fr; /* One column layout */
+      max-width: 350px;           /* Limit the width on mobile */
+      margin: 0 auto;             /* Center the container */
+      gap: 20px;                  /* Optional: adjust gap if needed */
     }
   }
   
