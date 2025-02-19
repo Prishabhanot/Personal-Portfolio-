@@ -1203,7 +1203,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
     .project-boxes-div {
       grid-template-columns: 1fr; /* One column layout */
       max-width: 140px;           /* Limit the width on mobile */
