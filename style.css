@@ -1206,7 +1206,7 @@ footer {
 @media screen and (max-width: 768px) {
     .project-boxes-div {
       grid-template-columns: 1fr; /* One column layout */
-      max-width: 200px;           /* Limit the width on mobile */
+      max-width: 140px;           /* Limit the width on mobile */
       margin: 0 auto;             /* Center the container */
       gap: 20px;                  /* Optional: adjust gap if needed */
     }
