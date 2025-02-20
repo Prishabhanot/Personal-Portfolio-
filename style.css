@@ -1040,7 +1040,7 @@ noscript {
     }
 
     .about-info {
-        width: 90%; /* Adjust width to fill more space */
+        width: 100%; /* Adjust width to fill more space */
         max-width: 600px; /* Prevent it from getting too wide */
         display: flex;
         flex-direction: column;
