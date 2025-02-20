@@ -1204,7 +1204,7 @@ footer {
     }
 
     .project-box-wrapper {
-        width: 100%; /* Ensure project boxes take full width */
+        width: 50%; /* Ensure project boxes take full width */
     }
 }
 
