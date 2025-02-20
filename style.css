@@ -1198,7 +1198,7 @@ footer {
 @media screen and (max-width: 768px) {
     .project-boxes-div {
         grid-template-columns: 1fr; /* One project per row */
-        max-width: 90%; /* Adjust width to fit mobile screens */
+        max-width: 50%; /* Adjust width to fit mobile screens */
         margin: 0 auto; /* Center the container */
         gap: 20px; /* Maintain spacing */
     }
