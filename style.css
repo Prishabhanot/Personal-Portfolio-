@@ -1029,6 +1029,18 @@ noscript {
 .about-info p {
     line-height: 25px
 }
+@media screen and (max-width: 768px) {
+    .info-dp-section {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        text-align: center; /* Center text */
+    }
+
+    .about-info {
+        width: 90%; /* Make the text take most of the screen */
+        align-items: center; /* Center text within the container */
+    }
+}
 
 .dp {
     width: 40%;
