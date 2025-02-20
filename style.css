@@ -1197,18 +1197,25 @@ footer {
 }
 @media screen and (max-width: 768px) {
     .project-boxes-div {
-        grid-template-columns: 1fr; /* One project per row */
-        max-width: 50%; /* Adjust width to fit mobile screens */
+        grid-template-columns: 1fr; /* Single column layout */
+        max-width: 100%; /* Ensure it doesn't overflow */
+        padding: 0 10px; /* Add some padding to prevent edge overflow */
         margin: 0 auto; /* Center the container */
-        gap: 20px; /* Maintain spacing */
+        gap: 20px;
     }
 
     .project-box-wrapper {
-        width: 50%; /* Ensure project boxes take full width */
+        width: 100%; /* Ensure each project takes the full container width */
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-box {
+        width: 90%; /* Reduce the size of project boxes */
+        max-width: 320px; /* Limit maximum width to prevent oversized boxes */
     }
 }
 
-  }
   
 .cta:hover:before,
 .project-box-wrapper {
