@@ -1037,7 +1037,7 @@ noscript {
     }
 
     .about-info {
-        width: 15%; /* Make the text take most of the screen */
+        width: 75%; /* Make the text take most of the screen */
         align-items: center; /* Center text within the container */
     }
 }
