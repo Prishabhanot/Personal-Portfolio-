@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership - Prisha Bhanot</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body class="body">
+    <header>
+        
+    <div class="navbar" id="navbar">
+        <div class="hey">Hey!</div>
+        <div class="logo" tabindex="0" aria-label="Prisha Bhanot logo">
+          <div class="logo-top">
+            <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
+          </div>
+        </div>
+        <div class="navbar-tabs" id="navbar-tabs">
+          <ul class="navbar-tabs-ul">
+            <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+              <a href="index.html#home" tabindex="0" aria-label="Home menu button">
+                &#60;/Home&#62;
+              </a>
+            </li>
+  
+            <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+              <a href="index.html#about" aria-label="about menu button">
+                &#60;/AboutMe&#62;
+              </a>
+            </li>
+  
+            <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+              <a href="index.html#skills" aria-label="skills menu button">
+                &#60;/Skills&#62;
+              </a>
+            </li>
+  
+            <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+              <a href="index.html#projects" aria-label="projects menu button">
+                &#60;/Projects&#62;
+              </a>
+            </li>
+            <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+              <a href="Leadership.html#leadership1" aria-label="leadership1">
+                &#60;/Leadership&#62;
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- navbar tabs ends -->
+      </div>
+    </header>
+    <!-- header ends here -->
+  
+
+    <main class="projects-section-container">
+        <div class="projects-section-div">
+            <div class="section-heading">
+                <h2 class="section-heading-article">&#60;/Leadership&#62;</h2>
+                <p class="sectionHeadingP"></p>
+            </div>
+            
+            <!-- Project 1 -->
+            <section class="project" id="leadership1">
+                <div class="image-container">
+                    <img src="src/png/SpectralData.png" alt="Project 1 Image 1" class="roll-in-left">
+                    <img src="src/png/SpectralData.png" alt="Project 1 Image 2"class="bounce-in-top">
+                    <img src="src/png/SpectralData.png" alt="Project 1 Image 3">
+                </div>
+                <div class="info-div">
+                    <p>
+                      My leadership roles, such as serving as the Competition Lead for the Ontario Engineering Competition and Software Engineer for the McMaster Medical Engineering Design Team, have enhanced my ability to lead teams, resolve complex problems, and effectively communicate technical concepts. I have gained extensive project management and coordination experience, including implementing the Agile Framework in engineering projects. Notably, I contributed to the development of a surgical tool transfer system using a robotic arm, conducted thermal analysis with Granta, and designed a wind turbine using Autodesk Inventor for an EWB project. Additionally, I worked on a biomedical engineering project, designing a grabber arm for a patient with spina bifida. My experience with Lean and Six Sigma methodologies has further refined my skills in driving quality and performance improvements across diverse projects..</p>
+                </div>
+ <!-- ---------------------- -->
+                </div>
+            </section>
+        </main>
+      <!-- footer ends here -->
+    
+      <script src="main.js"></script>
+    
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    
+      <script>
+        function openURL() {
+          var url = "src/pdf/Vinod's Resume.pdf";
+    
+          window.open(url, "_blank");
+        }
+      </script>
+    
+      <script>
+        const cursorInner = document.getElementById("cursor-inner");
+        const cursorOuter = document.getElementById("cursor-outer");
+        const links = document.querySelectorAll("a,label,button");
+    
+        document.addEventListener("mousemove", function (e) {
+          const posX = e.clientX;
+          const posY = e.clientY;
+    
+          cursorInner.style.left = `${posX}px`;
+          cursorInner.style.top = `${posY}px`;
+    
+          // cursorOuter.style.left = `${posX}px`;
+          // cursorOuter.style.top = `${posY}px`;
+    
+          cursorOuter.animate(
+            {
+              left: `${posX}px`,
+              top: `${posY}px`,
+            },
+            { duration: 500, fill: "forwards" }
+          );
+    
+          links.forEach((link) => {
+            link.addEventListener("mouseenter", () => {
+              cursorInner.classList.add("hover");
+              cursorOuter.classList.add("hover");
+            });
+            link.addEventListener("mouseleave", () => {
+              cursorInner.classList.remove("hover");
+              cursorOuter.classList.remove("hover");
+            });
+          });
+        });
+      </script>
+     <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
