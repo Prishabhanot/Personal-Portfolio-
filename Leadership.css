@@ -1812,35 +1812,3 @@ body {
 }
 
 
-
-
-/* Add media queries for responsiveness */
-@media (max-width: 768px) {
-    .role-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .role-image {
-        margin-right: 0;
-        margin-bottom: 20px;
-        width: 150px;
-        height: 150px;
-    }
-
-    .info-div {
-        padding: 10px;
-    }
-
-    .section-heading-article {
-        text-align: center;
-    }
-
-    ul {
-        padding-left: 0;
-    }
-
-    ul li {
-        padding-left: 20px;
-    }
-}
