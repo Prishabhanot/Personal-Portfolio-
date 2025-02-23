@@ -1812,3 +1812,85 @@ body {
 }
 
 
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.hey {
+    color: #fff;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar-tabs {
+    display: flex;
+}
+
+.navbar-tabs-ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-tabs-ul li {
+    margin: 0 10px;
+}
+
+.navbar-tabs-ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-tabs-ul a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-tabs {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-tabs.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar-tabs-ul {
+        flex-direction: column;
+    }
+
+    .navbar-tabs-ul li {
+        margin: 10px 0;
+    }
+
+    .logo, .hey {
+        display: none;
+    }
+}
