@@ -1635,3 +1635,15 @@ footer {
     color: #000;
 }
 
+@media screen and (max-width: 600px) {
+    /* 1) No more horizontal scrollbar */
+    html, body {
+      overflow-x: hidden !important;
+    }
+  
+    /* 2) Hide the big background blob so it never overflows */
+    .blob {
+      display: none !important;
+    }
+  }
+  
