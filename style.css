@@ -1635,38 +1635,23 @@ footer {
     color: #000;
 }
 
-@media screen and (max-width: 600px) {
-    /* 1. Hide desktop tabs, show burger */
-    .navbar-tabs {
-      display: none !important;
-    }
-    .hamburger {
-      display: block !important;
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
+/* mobile menu: hidden by default, shows full‐screen when “.open” */
+.mobiletogglemenu {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-dark-mode);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    z-index: 1000;
+  }
   
-    /* 2. Full-screen mobile menu (hidden by default, shown when .open is added) */
-    .mobiletogglemenu {
-      display: none;
-      position: fixed;
-      top: 0; right: 0; bottom: 0; left: 0;
-      background-color: var(--color-dark-mode);
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 30px;
-      z-index: 999;
-    }
-    .mobiletogglemenu.open {
-      display: flex !important;
-    }
-  
-    /* 3. Fluidly scale the name so it never overflows */
-    #name {
-      font-size: clamp(4rem, 12vw, 6rem) !important;
-    }
+  /* toggle the menu into view */
+  .mobiletogglemenu.open {
+    display: flex;
   }
   
