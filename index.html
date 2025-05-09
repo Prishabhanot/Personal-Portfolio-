@@ -10,11 +10,15 @@
 ╚═╝░░░░░╚═╝░░░░░╚═╝╚═════╝╚═╝╚═╝░░╚═╝
  
 -->
+
 <head>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag("js", new Date());
+
     gtag("config", "G-YMWDE0VTD3");
   </script>
   <meta charset="UTF-8" />
@@ -22,12 +26,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#000" />
-  <meta name="description" content="Prisha Bhanot | Portfolio, Visit and know about me & my projects/designs." />
-  <meta name="keywords" content="Prisha Bhanot, Prisha Bhanot portfolio, Prisha Bhanot Portfolio" />
+  <meta name="description"
+    content="Prisha Bhanot | Portfolio, Visit and know about me & my projects/designs." />
+  <meta name="keywords"
+    content="Prisha Bhanot,Prisha Bhanot portfolio,Prisha Bhanot Portfolio,/>
   <meta name="author" content="Prisha Bhanot" />
   <meta property="og:image" content="https://www.vinodjangid.site/src/png/Preview-card-min.png" />
   <meta property="og:title" content="Prisha Bhanot | Portfolio" />
-  <meta property="og:description" content="Hi! My name is Prisha." />
+  <meta property="og:description"
+    content="Hi! My name is Prisha." />
+
   <meta property="og:url" content="https://prishabhanot.site" />
   <meta property="og:site_name" content="Prisha Bhanot Portfolio" />
 
@@ -40,10 +48,9 @@
   <!-- google fonts-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
-</head>
 
 <body class="body">
-  <audio loop id="audioPlayer" style="display: none">
+  <audio loop="" id="audioPlayer" style="display: none">
     <source src="src/mp3/preloader.mp3" type="audio/mp3" />
   </audio>
   <div id="preloader"></div>
@@ -52,6 +59,7 @@
   <header>
     <div class="cursor-inner" id="cursor-inner"></div>
     <div class="cursor-outer" id="cursor-outer"></div>
+
     <div class="navbar" id="navbar">
       <div class="hey">Hey!</div>
       <div class="logo" tabindex="0" aria-label="Prisha Bhanot logo">
@@ -61,25 +69,40 @@
       </div>
       <div class="navbar-tabs" id="navbar-tabs">
         <ul class="navbar-tabs-ul">
-          <li class="home activeThistab navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
-            <a href="#home" tabindex="0" aria-label="Home menu button">&#60;/Home&#62;</a>
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
           </li>
-          <li class="about navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
-            <a href="#about" aria-label="about menu button">&#60;/AboutMe&#62;</a>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
           </li>
-          <li class="skills navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
-            <a href="#skills" aria-label="skills menu button">&#60;/Skills&#62;</a>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
           </li>
-          <li class="projects navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-            <a href="#projects" aria-label="projects menu button">&#60;/Projects&#62;</a>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
           </li>
-          <li class="leadership navbar-tabs-li" data-aos="fade-down" data-aos-delay="900">
-            <a href="Leadership.html#leadership1" aria-label="leadership">&#60;/Leadership&#62;</a>
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="Leadership.html#leadership1" aria-label="leadership1">
+              &#60;/Leadership&#62;
+            </a>
           </li>
         </ul>
       </div>
+      <!-- navbar tabs ends -->
     </div>
   </header>
+  <!-- header ends here -->
 
   <main>
     <!-- hamburger -->
@@ -92,138 +115,325 @@
         </button>
       </div>
     </div>
-    <!-- mobile menu -->
+    <!-- hamburger -->
     <div class="mobiletogglemenu" id="mobiletogglemenu">
       <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-        <li class="home activeThismobiletab mobile-navbar-tabs-li" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">&#60;/Home&#62;</a>
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
         </li>
-        <li class="about mobile-navbar-tabs-li" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">&#60;/AboutMe&#62;</a>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
         </li>
-        <li class="skills mobile-navbar-tabs-li" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">&#60;/Skills&#62;</a>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
         </li>
-        <li class="projects mobile-navbar-tabs-li" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">&#60;/Projects&#62;</a>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
         </li>
       </ul>
     </div>
+    <!-- mobile toggle menu ends -->
 
-    <!-- landing page -->
     <section class="landing-page-container" id="home">
       <div class="blob"></div>
+
       <div class="text-content">
         <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
-          <p class="jello">H</p><p class="jello">E</p><p class="jello">L</p><p class="jello">L</p><p class="jello">O</p><p class="jello">!</p>&nbsp;
-          <p class="jello">I</p><p class="jello">'</p><p class="jello">m</p>
+          <p class="jello">H</p>
+          <p class="jello">E</p>
+          <p class="jello">L</p>
+          <p class="jello">L</p>
+          <p class="jello">O</p>
+          <p class="jello">!</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
         </article>
         <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">P</p><p class="jello">r</p><p class="jello">i</p><p class="jello">s</p><p class="jello">h</p><p class="jello">a</p>&nbsp;
-          <p class="jello">B</p><p class="jello">h</p><p class="jello">a</p><p class="jello">n</p><p class="jello">o</p><p class="jello">t</p><p class="jello">.</p>
+          <p class="jello">P</p>
+          <p class="jello">r</p>
+          <p class="jello">i</p>
+          <p class="jello">s</p>
+          <p class="jello">h</p>
+          <p class="jello">a</p>
+          &nbsp;
+          <p class="jello">B</p>
+          <p class="jello">h</p>
+          <p class="jello">a</p>
+          <p class="jello">n</p>
+          <p class="jello">o</p>
+          <p class="jello">t</p>
+          <p class="jello">.</p>
         </article>
         <article id="work" data-aos="fade-up" data-aos-delay="400">
-          <div><p class="jello">A</p></div>
-          <div><p class="jello">m</p><p class="jello">u</p><p class="jello">l</p><p class="jello">t</p><p class="jello">i</p><p class="jello">d</p><p class="jello">i</p><p class="jello">s</p><p class="jello">c</p><p class="jello">i</p><p class="jello">p</p><p class="jello">l</p><p class="jello">i</p><p class="jello">n</p><p class="jello">a</p><p class="jello">r</p><p class="jello">y</p></div>
-          <div><p class="jello">e</p><p class="jello">n</p><p class="jello">g</p><p class="jello">i</p><p class="jello">n</p><p class="jello">e</p><p class="jello">e</p><p class="jello">r</p></div>
-          <div><p class="jello">s</p><p class="jello">h</p><p class="jello">a</p><p class="jello">p</p><p class="jello">i</p><p class="jello">n</p><p class="jello">g</p></div>
-          <div><p class="jello">t</p><p class="jello">h</p><p class="jello">e</p></div>
-          <div><p class="jello">f</p><p class="jello">u</p><p class="jello">t</p><p class="jello">u</p><p class="jello">r</p><p class="jello">e</p><p class="jello">.</p></div>
+          <div>
+            <p class="jello">A</p>
+          </div>
+          <div>
+            <p class="jello">m</p>
+            <p class="jello">u</p>
+            <p class="jello">l</p>
+            <p class="jello">t</p>
+            <p class="jello">i</p>
+            <p class="jello">d</p>
+            <p class="jello">i</p>
+            <p class="jello">s</p>
+            <p class="jello">c</p>
+            <p class="jello">i</p>
+            <p class="jello">p</p>
+            <p class="jello">l</p>
+            <p class="jello">i</p>
+            <p class="jello">n</p>
+            <p class="jello">a</p>
+            <p class="jello">r</p>
+            <p class="jello">y</p>
+          </div>
+          <div>
+            <p class="jello">e</p>
+            <p class="jello">n</p>
+            <p class="jello">g</p>
+            <p class="jello">i</p>
+            <p class="jello">n</p>
+            <p class="jello">e</p>
+            <p class="jello">e</p>
+            <p class="jello">r</p>
+          </div>
+          <div>
+            <p class="jello">s</p>
+            <p class="jello">h</p>
+            <p class="jello">a</p>
+            <p class="jello">p</p>
+            <p class="jello">i</p>
+            <p class="jello">n</p>
+            <p class="jello">g</p>
+          </div>
+          <div>
+            <p class="jello">t</p>
+            <p class="jello">h</p>
+            <p class="jello">e</p>
+          </div>
+          <div>
+            <p class="jello">f</p>
+            <p class="jello">u</p>
+            <p class="jello">t</p>
+            <p class="jello">u</p>
+            <p class="jello">r</p>
+            <p class="jello">e</p>
+            <p class="jello">.</p>
+          </div>
         </article>
+        
         <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          I'm a passionate engineer with a drive for innovation at the intersection of AI, healthcare, and biotechnology.<br/><br/>
+          I'm a passionate engineer with a drive for innovation at the intersection of AI, healthcare, and biotechnology. <br />
+          <br />
           Currently pursuing a Bachelor's in Chemical & Bioengineering with a Minor in Computer Science at McMaster University
         </p>
         <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
           <a href="mailto:bhanop1@mcmaster.ca" tabindex="-1">
             <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Talk!</p><span class="letsTalkBtn-BG"></span>
+              <p class="letsTalkBtn-text">Let's Talk!</p>
+              <span class="letsTalkBtn-BG"></span>
             </button>
           </a>
           <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />        
+          <div class="setting-container" id="setting-container">
             <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0" aria-label="settings"></label>
-            <div class="visualmodetogglebuttoncontainer">
+
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+              aria-label="settings for sound and appearance"></label>
+
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
               <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
-              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0" aria-label="switch appearance"></label>
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="switch appearance"></label>
             </div>
-            <div class="soundtogglebuttoncontainer">
+
+            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
               <input type="checkbox" id="switchforsound" onclick="playpause()" />
-              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound" class="needtobeinvert"></label>
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
+                class="needtobeinvert"></label>
             </div>
           </div>
+          <!-- setting div ends -->
         </div>
+        <!-- contact-btn-div -->
       </div>
+     
     </section>
-
-    <!-- about section -->
+    <!-- landing page ends here -->
     <section class="about-section-container" id="about" data-aos="fade-up">
       <div class="about-section">
         <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">&#60;/AboutMe&#62;</h2>
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/AboutMe&#62;
+          </h2>
           <p class="sectionHeadingP"></p>
         </div>
-        <div class="info-dp-section" style="display:flex;align-items:flex-start;">
-          <div class="about-info" style="flex:2;">
+        <div class="info-dp-section" style="display: flex; align-items: flex-start;">
+          <div class="about-info" style="flex: 2;">
             <p tabindex="0">
-              Hi! My name is Prisha. I have a strong background in machine learning and data analytics. In supervised learning, I’ve used convolutional neural networks (CNNs) for image recognition, while in unsupervised learning I’ve applied K-Means clustering for effective data segmentation. I also have hands-on experience with sequence prediction tasks using LSTM networks. I’m proficient in classical time series forecasting methods, such as ARIMA and SARIMA models, to predict trends and patterns.
-            </p><br/>
+              Hi! My name is Prisha. I have a strong background in machine learning and data analytics. In supervised learning, I’ve used convolutional neural networks (CNNs) for image recognition, while in unsupervised learning I’ve applied K-Means clustering for effective data segmentation. I also have hands-on experience with sequence prediction tasks using LSTM networks. I’m proficient in classical time series forecasting methods, such as ARIMA and SARIMA models, to predict trends and patterns. 
+            </p>
+            <br />
             <p tabindex="0">
-              I excel at leading teams and innovation through a blend of Lean, Six Sigma, and Agile methodologies. I hold key skills in stakeholder engagement, risk management, budget planning, and schedule coordination. In leadership roles—such as serving as Competition Lead for the Ontario Engineering Competition and as a Software Engineer for the McMaster Medical Engineering Design Team—I’ve demonstrated a keen ability to resolve complex challenges, communicate technical concepts clearly, and ensure projects remain on track and within scope.
+              I excel at leading teams and innovation through a blend of Lean, Six Sigma, and Agile methodologies. I hold key skills in stakeholder engagement, risk management, budget planning, and schedule coordination. In leadership roles—such as serving as Competition Lead for the Ontario Engineering Competition and as a Software Engineer for the McMaster Medical Engineering Design Team—I’ve demonstrated a keen ability to resolve complex challenges, communicate technical concepts clearly, and ensure projects remain on track and within scope. 
             </p>
           </div>
-          <div class="about-image" style="flex:1;text-align:center;">
-            <img src="src/png/Photo.png" alt="Your image" style="max-width:100%;height:auto;border-radius:50%;" />
+          <div class="about-image" style="flex: 1; text-align: center;">
+            <img src="src/png/Photo.png" alt="Your image" style="max-width: 100%; height: auto; border-radius: 50%;" />
           </div>
         </div>
       </div>
     </section>
+    
 
-    <!-- skills section -->
+    <!-- about section ends  -->
+
     <section class="skills-section-container" id="skills">
       <div class="skills-section">
         <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">&#60;/Skills&#62;</h2>
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Skills&#62;
+          </h2>
           <p class="sectionHeadingP"></p>
         </div>
         <div class="frontend-dev-section">
-          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0" aria-label="Tech Stack">Tech Stack</h3>
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+            aria-label="As a frontend a developer these are the skills i have">
+            Tech Stack
+          </h3>
           <ul class="tech-stack-wrapper">
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://www.python.org/"><img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white" alt="Python" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://www.mathworks.com/products/matlab.html"><img src="https://img.shields.io/badge/-MATLAB-0076A8?logo=mathworks&logoColor=white" alt="MATLAB" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/-SQL-4479A1?logo=postgresql&logoColor=white" alt="SQL" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white" alt="HTML" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white" alt="CSS" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://opencv.org/"><img src="https://img.shields.io/badge/-OpenCV-5C3EE8?logo=opencv&logoColor=white" alt="OpenCV" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://www.tensorflow.org/"><img src="https://img.shields.io/badge/-TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://pytorch.org/"><img src="https://img.shields.io/badge/-PyTorch-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://www.autodesk.com/products/autocad/overview"><img src="https://img.shields.io/badge/-AutoCAD-D40000?logo=autodesk&logoColor=white" alt="AutoCAD" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://www.autodesk.com/products/inventor/overview"><img src="https://img.shields.io/badge/-AutoDesk%20Inventor-0696D7?logo=autodesk&logoColor=white" alt="AutoDesk Inventor" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://scikit-learn.org/"><img src="https://img.shields.io/badge/-Scikit%20Learn-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit-learn" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://keras.io/"><img src="https://img.shields.io/badge/-Keras-D00000?logo=keras&logoColor=white" alt="Keras" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://www.docker.com/"><img src="https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white" alt="Docker" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://kubernetes.io/"><img src="https://img.shields.io/badge/-Kubernetes-326CE5?logo=kubernetes&logoColor=white" alt="Kubernetes" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white" alt="Pandas" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://numpy.org/"><img src="https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white" alt="NumPy" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://jupyter.org/"><img src="https://img.shields.io/badge/-Jupyter-F37626?logo=jupyter&logoColor=white" alt="Jupyter" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://git-scm.com/"><img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white" alt="Git" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://www.scipy.org/"><img src="https://img.shields.io/badge/-SciPy-8CAAE6?logo=scipy&logoColor=white" alt="SciPy" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://matplotlib.org/"><img src="https://img.shields.io/badge/-Matplotlib-3776AB?logo=python&logoColor=white" alt="Matplotlib" class="tech-stack-logo"/></a></li>
-            <li class="tech-stack-badge" data-aos="fade-up"><a href="https://www.r-project.org/"><img src="https://img.shields.io/badge/-R-276DC3?logo=r&logoColor=white&style=flat" alt="R" class="tech-stack-logo"/></a></li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://www.python.org/">
+                <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white" alt="Python" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://www.mathworks.com/products/matlab.html">
+                <img src="https://img.shields.io/badge/-MATLAB-0076A8?logo=mathworks&logoColor=white" alt="MATLAB" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://www.postgresql.org/">
+                <img src="https://img.shields.io/badge/-SQL-4479A1?logo=postgresql&logoColor=white" alt="SQL" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                <img src="https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white" alt="HTML" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                <img src="https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white" alt="CSS" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://opencv.org/">
+                <img src="https://img.shields.io/badge/-OpenCV-5C3EE8?logo=opencv&logoColor=white" alt="OpenCV" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://www.tensorflow.org/">
+                <img src="https://img.shields.io/badge/-TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://pytorch.org/">
+                <img src="https://img.shields.io/badge/-PyTorch-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://www.autodesk.com/products/autocad/overview">
+                <img src="https://img.shields.io/badge/-AutoCAD-D40000?logo=autodesk&logoColor=white" alt="AutoCAD" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://www.autodesk.com/products/inventor/overview">
+                <img src="https://img.shields.io/badge/-AutoDesk%20Inventor-0696D7?logo=autodesk&logoColor=white" alt="AutoDesk Inventor" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://scikit-learn.org/">
+                <img src="https://img.shields.io/badge/-Scikit%20Learn-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit-learn" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://keras.io/">
+                <img src="https://img.shields.io/badge/-Keras-D00000?logo=keras&logoColor=white" alt="Keras" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://www.docker.com/">
+                <img src="https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white" alt="Docker" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://kubernetes.io/">
+                <img src="https://img.shields.io/badge/-Kubernetes-326CE5?logo=kubernetes&logoColor=white" alt="Kubernetes" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://pandas.pydata.org/">
+                <img src="https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white" alt="Pandas" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://numpy.org/">
+                <img src="https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white" alt="NumPy" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://jupyter.org/">
+                <img src="https://img.shields.io/badge/-Jupyter-F37626?logo=jupyter&logoColor=white" alt="Jupyter" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://git-scm.com/">
+                <img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white" alt="Git" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://www.scipy.org/">
+                <img src="https://img.shields.io/badge/-SciPy-8CAAE6?logo=scipy&logoColor=white" alt="SciPy" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://matplotlib.org/">
+                <img src="https://img.shields.io/badge/-Matplotlib-3776AB?logo=python&logoColor=white" alt="Matplotlib" class="tech-stack-logo" />
+              </a>
+            </li>
+            <li class="tech-stack-badge" data-aos="fade-up">
+              <a href="https://www.r-project.org/">
+                <img src="https://img.shields.io/badge/-R-276DC3?logo=r&logoColor=white&style=flat" alt="R" class="tech-stack-logo" />
+              </a>
+            </li>
           </ul>
         </div>
-      </div>
-    </section>
 
-    <!-- projects section -->
+    <!-- skills section ends -->
     <section class="projects-section-container" id="projects">
       <div class="projects-section-div">
         <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="My projects">&#60;/Projects&#62;</h2>
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Projects&#62;
+          </h2>
           <p class="sectionHeadingP"></p>
         </div>
         <div class="project-boxes-div">
-          <!-- Project 1 -->
+
+          <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box4" id="project-box4">
               <div class="info-div">
@@ -232,201 +442,375 @@
                   Classifies 7 types of skin cancer lesions using a deep learning CNN model. Processes and balances the dataset, trains the model, and evaluates its accuracy with visualizations.
                 </p>
                 <div class="project-buttons">
-                  <a href="https://github.com/Prishabhanot/Skin_Cancer_Classification_Model.git" target="_blank" class="github-redirect"><img src="src/svg/github.svg" alt="github" /></a>
-                  <a href="https://github.com/Prishabhanot/Skin_Cancer_Classification_Model.git" target="_blank" class="cta"><span>Live view</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></a>
+                  <a href="https://github.com/Prishabhanot/Skin_Cancer_Classification_Model.git" target="_blank" class="github-redirect"
+                  aria-label="Visit Netflix clone on GitHub">
+                  <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://github.com/Prishabhanot/Skin_Cancer_Classification_Model.git" target="_blank" class="cta"
+                    aria-label="Visit qr generator live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="image-div"><img src="src/png/CancerClassification.png" alt="Cancer Classification"/></div>
+              <div class="image-div">
+                <img src="src/png/CancerClassification.png" alt="image of graph" />
+              </div>
             </div>
           </div>
-          <!-- Project 2 -->
+
+          <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box3" id="project-box3">
               <div class="info-div">
                 <article class="ProjectHeading">Facial Recognition PCA</article>
                 <p class="ProjectDescription">
-                  A face recognition system using PCA SVM classifier. PCA extracts essential features (eigenfaces) from facial images, significantly reducing computational complexity while retaining critical information for accurate recognition.
+                  A face recognition system using PCA SVM classifier. PCA extracts essential features (eigenfaces) from facial images, significantly reducing computational complexity while retaining critical information for accurate recognition
                 </p>
                 <div class="project-buttons">
-                  <a href="https://github.com/Prishabhanot/Facial_Recognition_PCA.git" target="_blank" class="github-redirect"><img src="src/svg/github.svg" alt="github" /></a>
-                  <a href="https://github.com/Prishabhanot/Facial_Recognition_PCA.git" target="_blank" class="cta"><span>Live view</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></a>
+                  <a href="https://github.com/Prishabhanot/Facial_Recognition_PCA.git" target="_blank" class="github-redirect"
+                    aria-label="Visit Netflix clone on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://github.com/Prishabhanot/Facial_Recognition_PCA.git" target="_blank" class="cta"
+                    aria-label="Visit netflix clone live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="image-div"><img src="src/png/Facial_Rec.png" alt="Facial Recognition"/></div>
+              <div class="image-div">
+                <img src="src/png/Facial_Rec.png" alt="netflix clone website preview image" />
+              </div>
             </div>
           </div>
-          <!-- Project 3 -->
-          <div class="project-box-wrapper" data-aos="fade-up">
+
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
             <div class="project-box project-box2" id="project-box2">
               <div class="info-div">
                 <article class="ProjectHeading">Stock Price Prediction Model</article>
                 <p class="ProjectDescription">
-                  A stock price prediction model for Apple Inc. (AAPL) using an LSTM neural network trained on historical data to forecast future prices.
+                  A stock price prediction model for Apple Inc. (AAPL) using a Long Short-Term Memory (LSTM) neural network. 
+                  It is trained on historical stock price data, and after training, it predicts the future price of Apple stock.
                 </p>
                 <div class="project-buttons">
-                  <a href="https://github.com/Prishabhanot/Stock-Price-Prediction-Model" target="_blank" class="github-redirect"><img src="src/svg/github.svg" alt="github" /></a>
-                  <a href="https://github.com/Prishabhanot/Stock-Price-Prediction-Model" target="_blank" class="cta"><span>Live view</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></a>
+                  <a href="https://github.com/Prishabhanot/Stock-Price-Prediction-Model" target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://github.com/Prishabhanot/Stock-Price-Prediction-Model" target="_blank" class="cta"
+                    aria-label="Visit Github Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="image-div"><img src="src/png/graph.png" alt="Stock Prediction Graph"/></div>
+              <div class="image-div">
+                <img src="src/png/graph.png" alt="Pexelicon website preview image" />
+              </div>
             </div>
           </div>
-          <!-- Project 4 -->
+
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box5" id="project-box5">
               <div class="info-div">
-                <article class="ProjectHeading">Animal Image Classification</article>
+                <article class="ProjectHeading">Animal Image classification</article>
                 <p class="ProjectDescription">
-                  Classify images of dogs and cats using a CNN built with TensorFlow and Keras.
+                  A project to classify images of dogs and cats using a Convolutional Neural Network (CNN) built with TensorFlow and Keras. 
                 </p>
                 <div class="project-buttons">
-                  <a href="https://github.com/Prishabhanot/Animal-Image-Classification-" target="_blank" class="cta"><span>Live view</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></a>
+                  <a href="https://github.com/Prishabhanot/Animal-Image-Classification-" target="_blank" class="cta" aria-label="Visit Comickaze live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="image-div"><img src="src/png/CNN.png" alt="Animal CNN"/></div>
+              <div class="image-div">
+                <img src="src/png/CNN.png" alt="github" />
+              </div>
             </div>
           </div>
-          <!-- Project 5 -->
+
+          <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box2" id="project-box2">
               <div class="info-div">
-                <article class="ProjectHeading">K-means Clustering FIFA22 Dataset</article>
+                <article class="ProjectHeading">K means Clustering FIFA22 Dataset</article>
                 <p class="ProjectDescription">
-                  K-means clustering with pandas, NumPy & scikit-learn, plus PCA visualization of clusters.
+                  K-means clustering using pandas, NumPy, and scikit-learn, through random centroid initialization, iterative clustering, and visualization of the clustered data using PCA.
                 </p>
                 <div class="project-buttons">
-                  <a href="https://github.com/Prishabhanot/K_means_Clustering_FIFA_22_Player_Dataset" target="_blank" class="github-redirect"></a>
-                  <a href="https://github.com/Prishabhanot/K_means_Clustering_FIFA_22_Player_Dataset" target="_blank" class="cta"><span>Live view</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></a>
+                  <a href="https://github.com/Prishabhanot/K_means_Clustering_FIFA_22_Player_Dataset" target="_blank" class="github-redirect"
+                    aria-label="Visit Aquaregia on GitHub">
+                  </a>
+                  <a href="https://github.com/Prishabhanot/K_means_Clustering_FIFA_22_Player_Dataset" target="_blank" class="cta"
+                    aria-label="Visit Aquaregia Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="image-div"><img src="src/png/cluster.png" alt="Cluster Plot"/></div>
+              <div class="image-div">
+                <img src="src/png/cluster.png" alt="Aquaregia website preview image" />
+              </div>
             </div>
           </div>
-          <!-- Project 6 -->
+
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box1" id="project-box1">
               <div class="info-div">
                 <article class="ProjectHeading">Spectral Data Analysis</article>
                 <p class="ProjectDescription">
-                  Smooths spectral data using Gaussian & Savitzky–Golay filters for noise reduction & feature detection.
+                  Smooths generated spectral data using Gaussian distributions and Savitzky-Golay filters. Commonly used in signal processing and spectral analysis for noise reduction and feature detection.
                 </p>
                 <div class="project-buttons">
-                  <a href="https://github.com/Prishabhanot/Spectral-Data-Analysis-.git" target="_blank" class="github-redirect"><img src="src/svg/github.svg" alt="github" /></a>
-                  <a href="https://github.com/Prishabhanot/Spectral-Data-Analysis-.git" target="_blank" class="cta"><span>Live view</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></a>
+                  <a href="https://github.com/Prishabhanot/Spectral-Data-Analysis-.git" target="_blank" class="github-redirect"
+                    aria-label="Visit axocean on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://github.com/Prishabhanot/Spectral-Data-Analysis-.git" class="cta"></target="_blank" class="cta"a>
+          
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="image-div"><img src="src/png/SpectralData.png" alt="Spectral Data"/></div>
+              <div class="image-div">
+                <img src="src/png/SpectralData.png" alt="Axocean website preview image" />
+              </div>
             </div>
           </div>
-          <!-- Project 7 -->
+          <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box1" id="project-box1">
               <div class="info-div">
-                <article class="ProjectHeading">Surgical Instrument Transfer</article>
+                <article class="ProjectHeading"> Surgical Instrument Transfer</article>
                 <p class="ProjectDescription">
-                  CAD modeling in Inventor, Quanser Q-Arm control & motion planning for precise instrument handling.
+                  Utilized Autodesk Inventor for CAD modeling, Quanser Q-Arm for robotic control, and motion planning algorithms for precise instrument handling. Conducted virtual simulations and designed a secure transport system.
                 </p>
                 <div class="project-buttons">
-                  <a href="projects.html#project1" class="cta"><span>Live view</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></a>
+                  <a href="projects.html#project1" class="cta"></target="_blank" class="cta"a>
+          
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="image-div"><img src="src/png/Container.png" alt="Container Transfer" style="object-fit:cover;width:300px;height:300px;position:relative;left:-90px;border-radius:20px;" /></div>
+              <div class="image-div">
+                <img src="src/png/Container.png" alt="Axocean website preview image" style="object-fit: cover; width: 300px; height: 300px; position: relative; left: -90px; border-radius: 20px;">
+
+              </div>
             </div>
           </div>
-          <!-- Project 8 -->
+          <!-- ---------------------- -->
+          <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box1" id="project-box1">
               <div class="info-div">
                 <article class="ProjectHeading">Assistive Device for Spina Bifida Patients</article>
                 <p class="ProjectDescription">
-                  Engineered a lightweight, foldable grabber arm via CAD, prototyping & mechanical analysis.
+                  Engineered a lightweight, foldable grabber arm using CAD modeling, rapid prototyping, and mechanical analysis.
                 </p>
                 <div class="project-buttons">
-                  <a href="projects.html#project2" class="cta"><span>Live view</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></a>
+                  <a href="projects.html#project2" class="cta"></target="_blank" class="cta"a>
+          
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="image-div"><img src="src/png/CADArm.png" alt="Grabber Arm" style="object-fit:cover;width:300px;height:300px;position:relative;left:-20px;" /></div>
+              <div class="image-div">
+                <img src="src/png/CADArm.png" alt="Axocean website preview image" style=" object-fit: cover; width: 300px; height: 300px; position: relative; left: -20px;">
+
+              </div>
             </div>
           </div>
-          <!-- Project 9 -->
+          <!-- ---------------------- -->
+
+          <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box1" id="project-box1">
               <div class="info-div">
                 <article class="ProjectHeading">Wind Turbine Design</article>
                 <p class="ProjectDescription">
-                  Inventor & ANSYS simulations, Excel Gantt charts & deflection analysis for efficient turbine design.
+                  Used Autodesk Inventor, ANSYS, and Excel for structural simulations and efficiency analysis. Managed timelines with Gantt charts and improved design feasibility through deflection simulations.
                 </p>
                 <div class="project-buttons">
-                  <a href="projects.html#project4" class="cta"><span>Live view</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></a>
+                  <a href="projects.html#project4" class="cta"></target="_blank" class="cta"a>
+          
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="image-div"><img src="src/png/Thermal.png" alt="Turbine Simulation" style="object-fit:cover;width:300px;height:300px;position:relative;left:-90px;" /></div>
+              <div class="image-div">
+                <img src="src/png/Thermal.png" alt="Axocean website preview image" style=" object-fit: cover; width: 300px; height: 300px; position: relative; left: -90px;">
+                
+              </div>
             </div>
           </div>
-          <!-- Project 10 -->
+                <!-- ---------------------- -->
           <div class="project-box-wrapper" data-aos="fade-up">
             <div class="project-box project-box1" id="project-box1">
               <div class="info-div">
                 <article class="ProjectHeading">Fall Detection System</article>
                 <p class="ProjectDescription">
-                  Real-time pose estimation with OpenCV & Python to detect falls via webcam.
+                  Implemented real-time pose estimation with OpenCV and Python, detecting falls via webcam. Ensuring accurate motion tracking and real-time monitoring.
                 </p>
                 <div class="project-buttons">
-                  <a href="projects.html#project3" class="cta"><span>Live view</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></a>
+                  <a href="projects.html#project3" class="cta"></target="_blank" class="cta"a>
+          
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="image-div"><img src="src/png/Fall.png" alt="Fall Detection" style="object-fit:cover;width:300px;height:300px;position:relative;left:-90px;" /></div>
+              <div class="image-div">
+                <img src="src/png/Fall.png" alt="Axocean website preview image" style=" object-fit: cover; width: 300px; height: 300px; position: relative; left: -90px;">
+
+              </div>
             </div>
           </div>
+          <!-- ---------------------- -->
+
+           
         </div>
       </div>
     </section>
+  </section>
+  
   </main>
+  <!-- main ends here -->
 
   <footer id="footer">
     <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
       <article aria-label="Back to top">&#8592;BACK TO TOP</article>
     </button>
-    <div class="footer-background"><div class="footer-blob"></div></div>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
+    </div>
     <div class="footer-foreground">
       <div class="footercontainer">
-        <div class="two-words"><article tabindex="0" aria-label="Quote">"The best way to predict the future is to invent it" - Alan Kay</article></div>
+        <div class="two-words">
+          <article tabindex="0" aria-label="The best way to predict the future is to invent it - Alan Kay">
+            "The best way to predict the future is to invent it" - Alan Kay
+          </article>
+        </div>
         <div class="social-media-container">
-          <div class="getintouch-heading"><article>GetinTouch();</article></div>
+          <div class="getintouch-heading">
+            <article>GetinTouch();</article>
+          </div>
           <div class="logos">
-            <a href="https://www.linkedin.com/in/prisha-bhanot-4b8390282/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 448 512" class="SocialHandle"><path d="M100.28 448H7.4V148.9h92.88zM53.79..."/></svg></a>
-            <a href="https://github.com/Prishabhanot" target="_blank" aria-label="GitHub"><svg viewBox="0 0 496 512" class="SocialHandle"><path d="M165.9..."/></svg></a>
-            <a href="mailto:bhanop1@mcmaster.ca" aria-label="Email"><svg viewBox="0 0 512 512" id="GmailLogo"><path d="M64 112c-8.8..."/></svg></a>
+            <a href="https://www.linkedin.com/in/prisha-bhanot-4b8390282/" target="_blank"
+              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg></a>
+
+            <a href="https://github.com/Prishabhanot" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg></a>
+
+            <a href="mailto:bhanop1@mcmaster" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
+                viewBox="0 0 512 512">
+                <path
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg></a>
           </div>
         </div>
         <div class="footer-avatar-container">
-          <img src="src/png/footer-avatar-vinod.png" alt="footer avatar" class="footer-avatar-img" id="footer-wala-avatar"/>
+          <img src="src/png/footer-avatar-vinod.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
           <div class="footer-avatar-face">
-            <div class="footer-avatar-eye footer-left-eye"><div class="footer-pupil"></div></div>
-            <div class="footer-avatar-eye footer-right-eye"><div class="footer-pupil"></div></div>
+            <div class="footer-avatar-eye footer-left-eye">
+              <div class="footer-pupil"></div>
+            </div>
+            <div class="footer-avatar-eye footer-right-eye">
+              <div class="footer-pupil"></div>
+            </div>
           </div>
         </div>
-        <div class="footer-bottom"><article>Design & Built by Prisha Bhanot</article></div>
+        <div class="footer-bottom">
+          <article>
+            Design & Built by Prisha Bhanot 
+          </article>
+        </div>
       </div>
     </div>
   </footer>
+  <!-- footer ends here -->
 
   <script src="main.js"></script>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
-    window.addEventListener("load", () => {
-      const pre = document.getElementById("preloader");
-      if (pre) pre.style.display = "none";
-    });
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/Vinod's Resume.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
     const cursorInner = document.getElementById("cursor-inner");
     const cursorOuter = document.getElementById("cursor-outer");
     const links = document.querySelectorAll("a,label,button");
-    document.addEventListener("mousemove", e => {
-      cursorInner.style.left = e.clientX + "px";
-      cursorInner.style.top = e.clientY + "px";
-      cursorOuter.animate({ left: e.clientX + "px", top: e.clientY + "px" }, { duration: 500, fill: "forwards" });
-      links.forEach(link => {
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
         link.addEventListener("mouseenter", () => {
           cursorInner.classList.add("hover");
           cursorOuter.classList.add("hover");
@@ -438,6 +822,5 @@
       });
     });
   </script>
-  <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
-</body>
-</html>
+ <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
