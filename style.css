@@ -1636,14 +1636,34 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    /* 1) No more horizontal scrollbar */
+    /* 1. No more horizontal scroll + hide blob */
     html, body {
       overflow-x: hidden !important;
     }
-  
-    /* 2) Hide the big background blob so it never overflows */
     .blob {
       display: none !important;
+    }
+  
+    /* 2. Shrink your animated headline */
+    #hello-friend {
+      font-size: 2.5rem !important;
+    }
+    #name {
+      font-size: 6rem !important;
+    }
+    #work {
+      font-size: 3rem !important;
+    }
+  
+    /* 3. Make navbar full-width, reduce gap, allow wrap */
+    .navbar {
+      width: 95% !important;
+      padding: 0 10px !important;
+    }
+    .navbar-tabs-ul {
+      gap: 20px !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
     }
   }
   
