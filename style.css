@@ -1635,80 +1635,82 @@ footer {
     color: #000;
 }
 
+
+/* Responsive Overrides */
 @media screen and (max-width: 768px) {
-    /* Header & Nav */
-    .navbar-tabs { display: none; }
-    .hamburger { display: block; position: fixed; top: 20px; right: 20px; z-index: 1001; }
-    .mobiletogglemenu {
-      display: none;
-      position: fixed;
-      top: 70px;
-      right: 20px;
-      background: var(--color-dark-mode);
-      border-radius: 10px;
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-      width: 200px;
-    }
-    .mobiletogglemenu.show { display: block; }
-    .mobiletogglemenu ul { list-style: none; margin: 0; padding: 10px; }
-    .mobiletogglemenu li { margin: 10px 0; }
-    .mobiletogglemenu a { color: var(--color-white); text-decoration: none; }
-  
-    /* Landing Section */
-    .landing-page-container {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 80px 20px;
-      height: auto;
-    }
-    .blob { display: none; }
-  
-    .text-content {
-      width: 100%;
-      text-align: center;
-      align-items: center;
-      padding: 0 10px;
-    }
-    #hello-friend { font-size: 2.4rem; }
-    #name         { font-size: 4rem; }
-    #work         { font-size: 2rem; }
-    #info-para {
-      font-size: 1.6rem;
-      width: 100%;
-      line-height: 1.4;
-    }
-  
-    /* About Section */
-    .info-dp-section {
-      flex-direction: column;
-      text-align: center;
-    }
-    .about-info, .about-image {
-      width: 100%;
-    }
-    .about-image img {
-      max-width: 200px;
-      margin: 20px auto;
-    }
-  
-    /* Projects */
-    .project-boxes-div {
-      display: grid;
-      grid-template-columns: 1fr;
-      padding: 0 10px;
-      gap: 20px;
-    }
-    .project-box { flex-direction: column; height: auto; }
-    .info-div, .image-div {
-      width: 100%;
-      padding: 20px;
-    }
-    .image-div img {
-      width: 100%;
-      height: auto;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 30px;
-    }
+  /* Header & Nav */
+  .navbar-tabs { display: none; }
+  .hamburger { display: block; position: fixed; top: 20px; right: 20px; z-index: 1001; }
+  .mobiletogglemenu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background: var(--color-dark-mode);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    width: 200px;
   }
+  .mobiletogglemenu.show { display: block; }
+  .mobiletogglemenu ul { list-style: none; margin: 0; padding: 10px; }
+  .mobiletogglemenu li { margin: 10px 0; }
+  .mobiletogglemenu a { color: var(--color-white); text-decoration: none; }
+
+  /* Landing Section */
+  .landing-page-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    height: auto;
+  }
+  .blob { display: none; }
+
+  .text-content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+  #hello-friend { font-size: 2.4rem; }
+  #name         { font-size: 4rem; }
+  #work         { font-size: 2rem; }
+  #info-para {
+    font-size: 1.6rem;
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  /* About Section */
+  .info-dp-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-info, .about-image {
+    width: 100%;
+  }
+  .about-image img {
+    max-width: 200px;
+    margin: 20px auto;
+  }
+
+  /* Projects */
+  .project-boxes-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+    gap: 20px;
+  }
+  .project-box { flex-direction: column; height: auto; }
+  .info-div, .image-div {
+    width: 100%;
+    padding: 20px;
+  }
+  .image-div img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 30px;
+  }
+}
