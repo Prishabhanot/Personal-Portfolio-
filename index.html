@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics / Tag Manager snippet (preserved from your original file) -->
+  <!-- Google Analytics / Tag Manager snippet (preserved) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -34,6 +34,7 @@
 </head>
 
 <body class="body">
+  <!-- Preloader audio & overlay -->
   <audio loop id="audioPlayer" style="display: none">
     <source src="src/mp3/preloader.mp3" type="audio/mp3" />
   </audio>
@@ -172,7 +173,7 @@
       <div class="footer-blob"></div>
     </div>
     <div class="footer-foreground">
-      <blockquote>"LALALALALALLThe best way to predict the future is to invent it" – Alan Kay</blockquote>
+      <blockquote>"The best way to predict the future is to invent it" – Alan Kay</blockquote>
       <div class="social-media-container">
         <span>GetInTouch();</span>
         <!-- your social icons -->
@@ -195,5 +196,13 @@
     }
   </script>
   <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+
+  <!-- Hide the preloader once the page fully loads -->
+  <script>
+    window.addEventListener('load', function() {
+      const pre = document.getElementById('preloader');
+      if (pre) pre.style.display = 'none';
+    });
+  </script>
 </body>
 </html>
