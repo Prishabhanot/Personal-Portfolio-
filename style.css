@@ -1636,71 +1636,43 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    /* 1. Position hamburger next to your logo/avatar */
+    /* 1. Hide desktop tabs, show burger button */
+    .navbar-tabs {
+      display: none !important;
+    }
     .hamburger {
       display: flex !important;
       position: fixed;
-      top: 20px;
-      right: 20px;            /* space from the right edge */
-      flex-direction: column; /* stack bars + label */
-      align-items: center;
+      top: 15px;
+      right: 15px;
       z-index: 1001;
     }
-    .hamburger-button {
-      background: none;
-      border: none;
-      padding: 0;
-      cursor: pointer;
-    }
-    /* 2. Add “Menu” label under the bars */
-    .hamburger-button::after {
-      content: "Menu";
-      font-family: "Fira Code", monospace;
-      font-size: 1.4rem;
-      color: var(--color-white);
-      margin-top: 6px;
-      line-height: 1;
-      pointer-events: none;
-    }
   
-    /* 3. Full-screen mobile menu styling */
+    /* 2. Full-screen mobile menu container (hidden by default) */
     .mobiletogglemenu {
       display: none !important;
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.75);
-      backdrop-filter: blur(8px);
+      background-color: var(--color-dark-mode);
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 30px;
-      transition: opacity .3s ease, transform .3s ease;
-      opacity: 0;
-      transform: scale(0.97);
       z-index: 1000;
     }
+    /* When you add “open” via JS, it shows */
     .mobiletogglemenu.open {
       display: flex !important;
-      opacity: 1;
-      transform: scale(1);
     }
   
-    /* 4. Staggered fade-in for each menu item */
-    .mobiletogglemenu ul li {
-      opacity: 0;
-      transform: translateY(10px);
-      list-style: none;
+    /* 3. Push landing text down a bit */
+    .landing-page-container {
+      align-items: flex-start !important;
+      padding-top: 120px !important;
     }
-    .mobiletogglemenu.open ul li {
-      animation: fadeInItem .4s forwards ease;
-    }
-    .mobiletogglemenu.open ul li:nth-child(1) { animation-delay: .2s; }
-    .mobiletogglemenu.open ul li:nth-child(2) { animation-delay: .3s; }
-    .mobiletogglemenu.open ul li:nth-child(3) { animation-delay: .4s; }
-    .mobiletogglemenu.open ul li:nth-child(4) { animation-delay: .5s; }
   
-    @keyframes fadeInItem {
-      to { opacity: 1; transform: translateY(0); }
+    /* 4. Keep your fluid “Prisha Bhanot” sizing */
+    #name {
+      font-size: clamp(4rem, 12vw, 6rem) !important;
     }
   }
-  
